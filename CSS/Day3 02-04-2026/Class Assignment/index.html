@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=nav, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        height: 70px;
+        background-color: yellow;
+    }
+    p{
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    body>div{
+        height: 400px;
+        width: 400px;
+        background-color: rgb(90, 78, 137);
+        border: solid 3px red;
+        display: flex;
+    }
+    div div{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border: solid 3px white;
+    }
+    @media screen and (max-width: 500px) {
+        nav{
+            background-color: red;
+        };
+        body>div{
+            flex-direction: column;
+        }
+    } 
+        
+</style>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae magnam et minus quam alias, voluptate mollitia laborum sunt quibusdam enim aperiam fugiat ullam, officiis sit autem aut illum qui nulla?</p>
+</body>
+</html>

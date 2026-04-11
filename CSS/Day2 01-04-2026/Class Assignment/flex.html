@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+         /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+         /* justify-content: space-between;
+            justify-content: space-evenly; 
+            justify-content: space-between; */ /*  Horizontal Alignment */
+            align-items: end;  /* Vertically Alignment */
+            background-color: rgb(255, 242, 202);
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(200, 50, 50);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box" style="height: 200px;">3</div>
+       
+        
+        
+    </div>
+
+</body>
+</html>

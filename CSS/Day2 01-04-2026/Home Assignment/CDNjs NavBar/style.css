@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2f2f2f;
+    padding: 12px 40px;
+    color: white;
+}
+
+/* LEFT SIDE */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.bracket {
+    color: #aaa;
+}
+
+.cdn {
+    color: #ff6c2c;
+}
+
+.js {
+    color: white;
+}
+
+/* ICONS */
+.icons i {
+    color: #bbb;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: white;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.menu li {
+    color: #ddd;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    color: white;
+}
+
+/* STATUS DOT */
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #2ecc71;
+    border-radius: 50%;
+    margin-left: 6px;
+}

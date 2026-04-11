@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #aa7676;
+            padding: 10px 20px;
+        }
+
+        /* Common style for all divs */
+        .navbar div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Logo */
+        .div1 img {
+            height: 40px;
+        }
+
+        /* Menu links */
+        .div1 a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .div1 a:hover {
+            color: yellow;
+        }
+
+        /* Search */
+        .div2 input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .div2 button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        /* Profile */
+        .div3 img {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+
+        .logout {
+            color: black;
+            cursor: pointer;
+        }
+
+        .logout:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+
+        <!-- Div 1: Logo + Home + Contact -->
+        <div class="div1">
+            <img src="Vidyoday.jpg" alt="Logo">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Div 2: Search -->
+        <div class="div2">
+
+            <input type="text" placeholder="Search">
+            <button>Search
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            </div>
+        <!-- Div 3: Profile + Logout -->
+        <div class="div3">
+            <div class="logout">Logout</div>
+            <img src="Profile.png" alt="Profile">
+        </div>
+
+    </div>
+
+</body>
+</html>

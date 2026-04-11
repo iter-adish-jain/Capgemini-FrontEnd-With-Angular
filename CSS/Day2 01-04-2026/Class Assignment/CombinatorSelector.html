@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator Selectors</title>
+
+    <style>
+        /* Descendant Selector (space) */
+        div p {
+            color: blue;
+        }
+
+        /* Child Selector (>) */
+        div > span {
+            color: red;
+        }
+
+        /* Adjacent Sibling Selector (+) */
+        h2 + p {
+            color: green;
+        }
+
+        /* General Sibling Selector (~) */
+        h3 ~ p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>This is inside div (Descendant selector)</p>
+        <span>This is direct child span (Child selector)</span>
+    </div>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph comes just after h2</p>
+
+    <h3>General Sibling Example</h3>
+    <p>First paragraph after h3</p>
+    <p>Second paragraph after h3</p>
+
+</body>
+</html>

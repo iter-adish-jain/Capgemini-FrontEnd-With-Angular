@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="submit.html" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        Name: <input type="text" name="name" placeholder="Your Name"><br><br>
+
+        Password: <input type="password" name="password" placeholder="Password"><br><br>
+
+        Email: <input type="email" name="email" placeholder="email"><br><br>
+
+        Phone: <input type="tel" name="phone" placeholder="Phone Number"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="sports"> Sports
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Other Details</legend>
+
+        Website: <input type="url" name="website" placeholder="Website"><br><br>
+
+        Search: <input type="search" name="search" placeholder="SEARCH"><br><br>
+
+        Age: <input type="number" name="age" placeholder="Your Age"><br><br>
+
+        Date: <input type="date" name="dob"><br><br>
+
+        Time: <input type="time" name="time"><br><br>
+
+        Color: <input type="color" name="color"><br><br>
+
+        Range: <input type="range" name="range"><br><br>
+
+        Select Course:
+        <select name="course">
+            <optgroup label="Engineering">
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+            </optgroup>
+            <optgroup label="Management">
+                <option value="bba">BBA</option>
+                <option value="mba">MBA</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        Upload File: <input type="file" name="file"><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <input type="hidden" name="userid" value="12345">
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
